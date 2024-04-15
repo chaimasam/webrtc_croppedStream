@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="webrtc_Offscreen.js"></script>
+  </head>
+
+  <body>
+    <div>
+    <video id="localVideo" autoplay playsinline style="width: 70%;"></video>
+  </div>
+    <div style="margin-top: 10px;">
+      Open this page in a second browser window then click below to start the WebRTC connection.
+    </div>
+
+    <div style="margin-top: 10px;">
+      <input type="button" id="start" onclick="start(true)" value="Start WebRTC"></input>
+    </div>
+    <video id="video" autoplay playsinline muted style="visibility: hidden; "></video>
+    <div id="container" >
+    <canvas id="canvas" style="visibility: hidden;width:1920px !important;height:1800 !important;  "></canvas>
+    </div>
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        pageReady();
+      });
+    </script>
+  </body>
+</html>
+
+
+
